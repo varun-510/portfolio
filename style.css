@@ -1,0 +1,27 @@
+/* POPUP ANIMATION */
+.popup{
+  opacity:0;
+  transform:scale(0.85);
+  transition:0.25s ease;
+}
+
+.popup.show{
+  display:flex;
+  opacity:1;
+  transform:scale(1);
+}
+
+.popup-content{
+  animation:popupIn 0.3s ease;
+}
+
+@keyframes popupIn{
+  from{
+    transform:translateY(30px);
+    opacity:0;
+  }
+  to{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
